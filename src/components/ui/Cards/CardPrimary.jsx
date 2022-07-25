@@ -1,4 +1,4 @@
-import coco from '../assets/coco.svg'
+import coco from '../../../assets/coco.svg'
 
 export function CardPrimary(props){
   return(

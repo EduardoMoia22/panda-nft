@@ -1,5 +1,5 @@
-import { Container } from "./components/Container"
-import { Header } from "./components/Header"
+import { Container } from "./components/layout/Container"
+import { Header } from "./components/layout/Header"
 
 import send from './assets/send.svg'
 import image1 from './assets/image1.png'
@@ -8,15 +8,22 @@ import image3 from './assets/image3.png'
 import nft1 from './assets/nft1.png'
 import nft2 from './assets/nft2.png'
 import nft3 from './assets/nft3.png'
-
+import artist1 from './assets/artist1.png'
+import artist2 from './assets/artist2.png'
+import artist3 from './assets/artist3.png'
+import artist4 from './assets/artist4.png'
+import artist5 from './assets/artist5.png'
+import artist6 from './assets/artist6.png'
 import binance from './assets/binance.png'
 import trustwallet from './assets/trustwallet.png'
 import metamask from './assets/metamask.png'
 import coinbase from './assets/coinbase.png'
 import tokocrypto from './assets/tokocrypto.png'
-import { CardPrimary } from "./components/CardPrimary"
+
+import { CardPrimary } from "./components/ui/Cards/CardPrimary"
 import { Button } from "./components/ui/Button/Button"
-import { CardSecondary } from "./components/CardSecondary"
+import { ArtistCard } from "./components/ui/Cards/ArtistCard"
+import { CardSecondary } from "./components/ui/Cards/CardSecondary"
 
 function App() {
   return (
@@ -108,13 +115,21 @@ function App() {
 
           <section className="mt-40">
             <div className="flex items-center justify-between">
-              <h3 className="font-bold text-5xl text-white">Featured Artist</h3>
+              <h3 className="font-bold   text-5xl text-white">Featured Artist</h3>
 
               <Button>
                 Get Started
               </Button>
             </div>
 
+            <div className="grid grid-cols-6 justify-items-center mt-14">
+              <ArtistCard src={artist1} name="Crispin Berry"/>
+              <ArtistCard src={artist2} name="Wade Warren"/>
+              <ArtistCard src={artist3} name="Robert Fox"/>
+              <ArtistCard src={artist4} name="Jacob Jones"/>
+              <ArtistCard src={artist5} name="Ralph Edwards"/>
+              <ArtistCard src={artist6} name="Arlene McCoy"/>
+            </div>
           </section>
         </Container>
       </main>

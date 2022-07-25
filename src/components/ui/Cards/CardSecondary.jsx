@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import yeslike from '../assets/like.svg'
-import nolike from '../assets/nolike.svg'
-import fire from '../assets/fire.svg'
-import autor from '../assets/autor.png'
+import yeslike from '../../../assets/like.svg'
+import nolike from '../../../assets/nolike.svg'
+import fire from '../../../assets/fire.svg'
+import autor from '../../../assets/autor.png'
 
 export function CardSecondary(props){
   const [like, setLike] = useState(false)

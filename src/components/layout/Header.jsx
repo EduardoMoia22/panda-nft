@@ -1,6 +1,6 @@
-import logo from '../assets/logo.svg'
+import logo from '../../assets/logo.svg'
+import { Button } from '../ui/Button/Button'
 import { Container } from './Container'
-import { Button } from './ui/Button/Button'
 
 export function Header(){
   return(
